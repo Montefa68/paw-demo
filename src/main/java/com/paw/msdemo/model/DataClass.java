@@ -5,11 +5,6 @@ public class DataClass {
     private final String name;
     private final int id;
 
-    /**
-     * @param name
-     * @param id
-     * @return
-     */
     public static DataClass Create(String name, int id)
     {
         return new DataClass(name,id);
