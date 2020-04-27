@@ -1,6 +1,17 @@
 package com.paw.msdemo.model.MapStruct;
 
+import lombok.Builder;
+import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document //Spring framework Mongodb Document mapping
+@Data //lombok Data Class
+@Builder //lombok Builder Class
  public class Car {
+
+    @Id //Spring framework Data annotation
+    private String id;
     private String make;
     private int numberOfSeats;
     private CarType carType;
