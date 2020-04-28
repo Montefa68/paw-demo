@@ -1,0 +1,9 @@
+Run the following commands to see Docker in Action:
+
+docker build target -t paw-demo
+
+docker images
+
+docker run -p 8080:8080 -t paw-demo
+
+docker-compose up
